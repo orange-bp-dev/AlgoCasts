@@ -23,7 +23,7 @@ function chunk(array, size) {
   //   }
   // }
 
-  //Solution2 sliceを使う方法
+  //Solution2 sliceを使う方法（最初に思いついた）
   let index = 0
   while (index < array.length) {
     chunked.push(array.slice(index, index + size))
