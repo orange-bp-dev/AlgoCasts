@@ -21,7 +21,7 @@ function chunk(array, size) {
   //   } else {
   //     last.push(element)
   //   }
-  // }
+  //  }
 
   //Solution2 sliceを使う方法（最初に思いついた）
   let index = 0

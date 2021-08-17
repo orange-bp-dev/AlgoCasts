@@ -9,6 +9,7 @@ function maxChar(str) {
   let chars = {}
   let max = 0
   let maxChar = ""
+
   for (let char of str) {
     //chars[str] += 1 || 1
     if (!chars[char]) {
@@ -17,7 +18,7 @@ function maxChar(str) {
       chars[char] += 1
     }
   }
-  console.log("charts", chars)
+  // console.log("charts", chars)
 
   for (let char in chars) {
     // console.log(char)
@@ -27,7 +28,10 @@ function maxChar(str) {
     }
   }
 
+  console.log(max, maxChar)
+
   return maxChar
+
   // //objectのvalue値だけを取り出した配列を作成
   // const valueArr = Object.values(chars)
   // const keyArr = Object.keys(chars)
@@ -43,6 +47,6 @@ function maxChar(str) {
   // const maxValueKey = console.log(chars)
 }
 
-console.log(maxChar("aiiueoaaa")) //この状態だと最大値が同じものが含まれてても一つしか返ってこない。
+console.log(maxChar("aiiueoaaakkkkkkkk")) //この状態だと最大値が同じものが含まれてても一つしか返ってこない。
 
 module.exports = maxChar
