@@ -7,6 +7,8 @@
 //   capitalize('a lazy fox') --> 'A Lazy Fox'
 //   capitalize('look, it is working!') --> 'Look, It Is Working!'
 
+//圧倒的非効率例
+
 function capitalize(str) {
   const wordSplitedArr = []
   const joinedWordSplitedArr = []
