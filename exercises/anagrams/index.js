@@ -20,6 +20,7 @@ function anagrams(stringA, stringB) {
 
   //stringAとstringBに含まれる文字とその個数のmapを作成
   const createStringMap = (str, map) => {
+    //Objectのときは 'o'f
     for (let char of str) {
       if (!map[char]) {
         map[char] = 1
@@ -42,5 +43,7 @@ function anagrams(stringA, stringB) {
 }
 
 anagrams("sato ryoka   !!!!!!", "sato ryoka  ?")
+
+//もう一つの方法はアルファベット順にソートして、それぞれの文字列がおなじになるかどうかを判定する方法
 
 module.exports = anagrams
