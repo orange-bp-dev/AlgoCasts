@@ -17,6 +17,15 @@
 //       '### '
 //       '####'
 
-function steps(n) {}
+function steps(n) {
+  let sharp = "#"
+  let emp = ""
 
-module.exports = steps;
+  for (let i = 0; i < n; i++) {
+    console.log((emp += sharp))
+  }
+}
+
+steps(100)
+
+module.exports = steps

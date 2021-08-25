@@ -38,6 +38,6 @@ function capitalize(str) {
   return joinedValue
 }
 
-capitalize("hello world hi there")
+capitalize("       hello world hi there")
 
 module.exports = capitalize
