@@ -24,15 +24,10 @@ function sum(n) {
     } else {
       userPointMap[point.userId] += point.point
     }
-    // if(userPointMap[])
   }
 
   for (let upm in userPointMap) {
     newArr.push({ userId: parseInt(upm), point: userPointMap[upm] })
-  }
-
-  for (let point of points) {
-    // console.log(point)
   }
 
   return newArr

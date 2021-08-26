@@ -7,6 +7,27 @@
 //   vowels('Why do you ask?') --> 4
 //   vowels('Why?') --> 0
 
-function vowels(str) {}
+function vowels(str) {
+  let count = 0
+  const checker = "aiueo"
 
-module.exports = vowels;
+  // for (let i in str) {
+  //   if (str[i] === "a" || str[i] === "i" || str[i] === "u" || str[i] === "e" || str[i] === "o") {
+  //     count++
+  //   } else {
+  //     count += 0
+  //   }
+  // }
+
+  for (let char of str.toLowerCase()) {
+    if (checker.includes(char)) {
+      count++
+    }
+  }
+
+  return count
+}
+
+console.log(vowels("android"))
+
+module.exports = vowels
