@@ -10,8 +10,9 @@ function maxChar(str) {
   let max = 0
   let maxChar = ""
 
-  for (let char of str) {
+  for (let char of sntr) {
     //chars[str] += 1 || 1
+    ;["", "", ""]
     if (!chars[char]) {
       chars[char] = 1
     } else {
@@ -27,8 +28,9 @@ function maxChar(str) {
       maxChar = char
     }
   }
+  console.log(chars)
 
-  console.log(max, maxChar)
+  // console.log(max, maxChar)
 
   return maxChar
 
